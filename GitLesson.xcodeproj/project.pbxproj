@@ -49,6 +49,7 @@
 		27CFCC751E70F345006DE191 /* GitLessonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitLessonUITests.swift; sourceTree = "<group>"; };
 		27CFCC771E70F345006DE191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27CFCC831E70F8CC006DE191 /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		27CFCC851E70FD6E006DE191 /* Tester.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Tester.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +107,7 @@
 				27CFCC5E1E70F345006DE191 /* LaunchScreen.storyboard */,
 				27CFCC611E70F345006DE191 /* Info.plist */,
 				27CFCC831E70F8CC006DE191 /* test.swift */,
+				27CFCC851E70FD6E006DE191 /* Tester.playground */,
 			);
 			path = GitLesson;
 			sourceTree = "<group>";
@@ -518,6 +520,7 @@
 				27CFCC7C1E70F345006DE191 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27CFCC7D1E70F345006DE191 /* Build configuration list for PBXNativeTarget "GitLessonTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +529,7 @@
 				27CFCC7F1E70F345006DE191 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27CFCC801E70F345006DE191 /* Build configuration list for PBXNativeTarget "GitLessonUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +538,7 @@
 				27CFCC821E70F345006DE191 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

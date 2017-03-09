@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    //MARK: New
     var str : String = "String"
     let intvar : Int = 1
     override func viewDidLoad() {
@@ -22,6 +24,8 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //MARK: - View Lifecycle
 
 
 }
