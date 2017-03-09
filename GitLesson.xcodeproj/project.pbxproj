@@ -14,7 +14,7 @@
 		27CFCC601E70F345006DE191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CFCC5E1E70F345006DE191 /* LaunchScreen.storyboard */; };
 		27CFCC6B1E70F345006DE191 /* GitLessonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFCC6A1E70F345006DE191 /* GitLessonTests.swift */; };
 		27CFCC761E70F345006DE191 /* GitLessonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFCC751E70F345006DE191 /* GitLessonUITests.swift */; };
-		27CFCC841E70F8CC006DE191 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFCC831E70F8CC006DE191 /* test.swift */; };
+		27CFCC8C1E713095006DE191 /* MovieViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFCC8B1E713095006DE191 /* MovieViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +48,8 @@
 		27CFCC711E70F345006DE191 /* GitLessonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitLessonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27CFCC751E70F345006DE191 /* GitLessonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitLessonUITests.swift; sourceTree = "<group>"; };
 		27CFCC771E70F345006DE191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27CFCC831E70F8CC006DE191 /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		27CFCC851E70FD6E006DE191 /* Tester.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Tester.playground; sourceTree = "<group>"; };
+		27CFCC8B1E713095006DE191 /* MovieViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,13 +100,13 @@
 		27CFCC541E70F345006DE191 /* GitLesson */ = {
 			isa = PBXGroup;
 			children = (
+				27CFCC871E712341006DE191 /* Clases */,
 				27CFCC551E70F345006DE191 /* AppDelegate.swift */,
 				27CFCC571E70F345006DE191 /* ViewController.swift */,
 				27CFCC591E70F345006DE191 /* Main.storyboard */,
 				27CFCC5C1E70F345006DE191 /* Assets.xcassets */,
 				27CFCC5E1E70F345006DE191 /* LaunchScreen.storyboard */,
 				27CFCC611E70F345006DE191 /* Info.plist */,
-				27CFCC831E70F8CC006DE191 /* test.swift */,
 				27CFCC851E70FD6E006DE191 /* Tester.playground */,
 			);
 			path = GitLesson;
@@ -128,6 +128,38 @@
 				27CFCC771E70F345006DE191 /* Info.plist */,
 			);
 			path = GitLessonUITests;
+			sourceTree = "<group>";
+		};
+		27CFCC871E712341006DE191 /* Clases */ = {
+			isa = PBXGroup;
+			children = (
+				27CFCC881E712341006DE191 /* Controllers */,
+				27CFCC891E712341006DE191 /* Models */,
+				27CFCC8A1E712341006DE191 /* Views */,
+			);
+			path = Clases;
+			sourceTree = "<group>";
+		};
+		27CFCC881E712341006DE191 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		27CFCC891E712341006DE191 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		27CFCC8A1E712341006DE191 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27CFCC8B1E713095006DE191 /* MovieViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +300,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				27CFCC581E70F345006DE191 /* ViewController.swift in Sources */,
-				27CFCC841E70F8CC006DE191 /* test.swift in Sources */,
 				27CFCC561E70F345006DE191 /* AppDelegate.swift in Sources */,
+				27CFCC8C1E713095006DE191 /* MovieViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
