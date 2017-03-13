@@ -59,6 +59,9 @@
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="DDt-WG-Opl">
+                                                    <rect key="frame" x="65" y="91" width="20" height="20"/>
+                                                </activityIndicatorView>
                                             </subviews>
                                         </view>
                                         <constraints>
@@ -67,15 +70,18 @@
                                             <constraint firstItem="Q8b-Mz-L2N" firstAttribute="trailing" secondItem="zJ0-tX-O43" secondAttribute="trailingMargin" id="GR6-q2-boD"/>
                                             <constraint firstItem="Q8b-Mz-L2N" firstAttribute="top" secondItem="PZw-90-GOj" secondAttribute="bottom" constant="3" id="Lk9-X8-1ny"/>
                                             <constraint firstItem="jwt-VF-Pyt" firstAttribute="top" secondItem="Q8b-Mz-L2N" secondAttribute="bottom" constant="3" id="RDn-u8-Nsj"/>
+                                            <constraint firstItem="DDt-WG-Opl" firstAttribute="centerX" secondItem="PZw-90-GOj" secondAttribute="centerX" id="cFL-Lo-lP6"/>
                                             <constraint firstItem="jwt-VF-Pyt" firstAttribute="trailing" secondItem="zJ0-tX-O43" secondAttribute="trailingMargin" id="fe4-kY-x20"/>
                                             <constraint firstItem="PZw-90-GOj" firstAttribute="leading" secondItem="zJ0-tX-O43" secondAttribute="leading" id="pKW-OB-pOC"/>
                                             <constraint firstItem="PZw-90-GOj" firstAttribute="top" secondItem="zJ0-tX-O43" secondAttribute="top" id="tgL-rS-Uj1"/>
+                                            <constraint firstItem="DDt-WG-Opl" firstAttribute="centerY" secondItem="PZw-90-GOj" secondAttribute="centerY" id="veq-XB-iNO"/>
                                             <constraint firstItem="jwt-VF-Pyt" firstAttribute="leading" secondItem="zJ0-tX-O43" secondAttribute="leadingMargin" id="wEk-53-Lcq"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="ivMovie" destination="PZw-90-GOj" id="Uey-sF-Vgy"/>
                                             <outlet property="lbSubtitle" destination="jwt-VF-Pyt" id="WxQ-gy-lha"/>
                                             <outlet property="lbTitle" destination="Q8b-Mz-L2N" id="dQb-VJ-vx8"/>
+                                            <outlet property="loadingIndicator" destination="DDt-WG-Opl" id="1dN-1a-NF6"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -167,6 +173,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Rx-h7-lDo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2351" y="-65"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="PYd-6U-7iL">
+            <objects>
+                <tableViewController id="cAB-iB-wKh" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="0x1-O7-nQQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="tSh-Xe-xbT">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tSh-Xe-xbT" id="vEf-Ec-nVf">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cAB-iB-wKh" id="oKo-6c-YQq"/>
+                            <outlet property="delegate" destination="cAB-iB-wKh" id="U4v-Hu-gQf"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fj2-G7-6fA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3012" y="-47"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="osc-5c-4HE">

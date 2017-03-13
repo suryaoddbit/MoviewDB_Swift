@@ -9,7 +9,7 @@
 import XCTest
 
 class GitLessonUITests: XCTestCase {
-        
+    let app = XCUIApplication()
     override func setUp() {
         super.setUp()
         
@@ -31,6 +31,13 @@ class GitLessonUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    func testMovieDetail(){
+        //app.staticTexts["X-MEN: SUPERNOVA"].tap()
+        XCTAssert(app.navigationBars["Movies"].exists)
+        
+        
     }
     
 }
